@@ -1,12 +1,39 @@
 {
   "name": "load-handlebars",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Load Handlebars partials and helpers from the filesystem using glob patterns",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test 'test/*.test.js'"
+  },
+  "keywords": [
+    "handlebars",
+    "hbs",
+    "partials",
+    "helpers",
+    "templates",
+    "vite",
+    "node"
+  ],
   "author": "dfdez",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfdez/load-handlebars"
+  },
+  "homepage": "https://github.com/dfdez/load-handlebars#readme",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
-    "glob": "^8.0.3",
+    "glob": "^10.4.5",
     "handlebars": "^4.7.7"
   }
 }
